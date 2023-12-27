@@ -1,0 +1,16 @@
+# Name of workflow
+name: First Workflow
+# When should the workflow run
+on: workflow_dispatch
+# Jobs in workflow
+jobs:
+  # Name of first job
+  first-job:
+    # Which environment (MacOS, Linux, Windows) it should run
+    runs-on: ubuntu-latest
+    # Steps in the job
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Done - bye!"
